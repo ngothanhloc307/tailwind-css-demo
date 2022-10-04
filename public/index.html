@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beats-Promotion</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Boxicons CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- hero image -->
+    <img
+      src="./img/hero.jpg"
+      alt=""
+      class="absolute top-0 right-0 w-full md:w-[60%] h-[680px] md:h-[600px] object-cover -z-10"
+    />
+
+    <header
+      class="w-full py-6 px-4 md:px-16 md:py-8 flex items-center justify-between"
+    >
+      <img src="./img/logo.png" alt="" class="w-12" />
+      <!-- Mobile Navigation -->
+      <nav
+        id="mobile_nav"
+        class="flex md:hidden flex-col items-center justify-center w-1/2 h-full right-[-200%] top-0 fixed bg-primary_bg backdrop-blur-md gap-24 transition-all duration-300 ease-in-out"
+      >
+        <!-- close-icon -->
+        <div
+          id="close-btn"
+          class="absolute top-8 left-6 w-8 h-8 rounded-full bg-gray-500 flex items-center justify-center hover:bg-gray-700 hover:shadow-md cursor-pointer"
+        >
+          <i class="bx bx-x text-white"></i>
+        </div>
+        <!-- menu list -->
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-2xl text-gray-700">Home</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-2xl text-gray-700">Products</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-2xl text-gray-700">Service</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-2xl text-gray-700">Contact</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+      </nav>
+
+      <!-- Medium divice navigation -->
+      <nav class="hidden md:flex items-center gap-12">
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-lg text-gray-100">Home</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-lg text-gray-100">Products</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-lg text-gray-100">Service</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+        <li class="flex items-center justify-center gap-1 flex-col group">
+          <a href="#" class="text-lg text-gray-100">Contact</a>
+          <div
+            class="w-0 group-hover:w-8 transition-all duration-300 ease-in-out h-1 rounded-md bg-pink-500"
+          ></div>
+        </li>
+      </nav>
+
+      <div id="toggleMenu" class="block md:hidden">
+        <i
+          class="bx bx-menu-alt-right text-3xl text-gray-50 cursor-pointer"
+        ></i>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <section
+      id="home"
+      class="w-full py-6 md:px-16 md:py-8 flex items-center md:items-start justify-center flex-col z-10 gap-6"
+    >
+      <p class="text-6xl font-extrabold text-gray-900">
+        Fell your <span class="block">Beats</span>
+        <span
+          class="block text-8xl bg-gradient-to-tr from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          >Studio</span
+        >
+      </p>
+
+      <a
+        href="#"
+        class="px-6 py-3 rounded-md bg-blue-400 text-lg tracking-wider text-gray-100"
+        >Learn more</a
+      >
+      <div class="w-full flex items-center justify-center mt-40">
+        <i
+          class="bx bxs-chevrons-down text-3xl text-gray-900 animate-bounce"
+        ></i>
+      </div>
+    </section>
+
+    <section
+      class="my-12 w-full bg-gray-300 px-12 py-6 h-32 md:h-32 flex items-center justify-center"
+    >
+      <div
+        class="w-full flex items-center justify-center p-4 rounded-md bg-gray-100 drop-shadow-md gap-4 -mt-24 md:-mt-32"
+      >
+        <input
+          type="text"
+          placeholder="your email..."
+          class="w-80 px-4 py-2 rounded-md text-xl text-gray-700"
+        />
+        <button
+          class="px-2 py-1 rounded-md bg-blue-400 text-gray-50 text-base hover:bg-blue-600 hover:shadow-md cursor-pointer duration-300 ease-in-out transition-all"
+        >
+          Subcribe
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="w-full py-6 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2"
+    >
+      <div class="flex items-center justify-center w-full">
+        <div
+          class="w-full p-4 bg-pink-300 rounded-md flex items-center justify-center shadow-md"
+        >
+          <img src="./img/beats1.png" alt="" class="w-80" />
+        </div>
+      </div>
+      <div class="p-4 flex flex-col items-start justify-start">
+        <p class="text-2xl text-gray-700 font-semibold">
+          Beatsbass pro wireless
+        </p>
+        <p class="text-lg text-gray-500 tracking-wider text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+          consequatur officiis voluptatem voluptatibus voluptas excepturi
+          suscipit, nisi laboriosam error numquam unde quis quisquam soluta odio
+          cumque ab, ratione perferendis? Esse atque, cupiditate voluptate
+          pariatur excepturi dignissimos laborum hic alias corporis sunt porro
+          autem possimus nostrum cum, doloremque cumque et dolores veniam,
+          inventore necessitatibus accusamu.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="w-full py-6 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2"
+    >
+      <div class="flex items-center justify-center w-full order-2">
+        <div
+          class="w-full p-4 bg-yellow-100 rounded-md flex items-center justify-center shadow-md"
+        >
+          <img src="./img/beats2.png" alt="" class="w-80" />
+        </div>
+      </div>
+      <div class="p-4 flex flex-col items-start justify-start">
+        <p class="text-2xl text-gray-700 font-semibold">
+          Beatsbass pro wireless
+        </p>
+        <p class="text-lg text-gray-500 tracking-wider text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+          consequatur officiis voluptatem voluptatibus voluptas excepturi
+          suscipit, nisi laboriosam error numquam unde quis quisquam soluta odio
+          cumque ab, ratione perferendis? Esse atque, cupiditate voluptate
+          pariatur excepturi dignissimos laborum hic alias corporis sunt porro
+          autem possimus nostrum cum, doloremque cumque et dolores veniam,
+          inventore necessitatibus accusamu.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="w-full py-6 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2"
+    >
+      <div class="flex items-center justify-center w-full">
+        <div
+          class="w-full p-4 bg-red-400 rounded-md flex items-center justify-center shadow-md"
+        >
+          <img src="./img/beats3.png" alt="" class="w-80" />
+        </div>
+      </div>
+      <div class="p-4 flex flex-col items-start justify-start">
+        <p class="text-2xl text-gray-700 font-semibold">
+          Beatsbass pro wireless
+        </p>
+        <p class="text-lg text-gray-500 tracking-wider text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+          consequatur officiis voluptatem voluptatibus voluptas excepturi
+          suscipit, nisi laboriosam error numquam unde quis quisquam soluta odio
+          cumque ab, ratione perferendis? Esse atque, cupiditate voluptate
+          pariatur excepturi dignissimos laborum hic alias corporis sunt porro
+          autem possimus nostrum cum, doloremque cumque et dolores veniam,
+          inventore necessitatibus accusamu.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="w-full py-6 md:px-16 md:py-8 grid grid-cols-1 md:grid-cols-2"
+    >
+      <div class="flex items-center justify-center w-full order-2">
+        <div
+          class="w-full p-4 bg-blue-100 rounded-md flex items-center justify-center shadow-md"
+        >
+          <img src="./img/beats4.png" alt="" class="w-80" />
+        </div>
+      </div>
+      <div class="p-4 flex flex-col items-start justify-start">
+        <p class="text-2xl text-gray-700 font-semibold">
+          Beatsbass pro wireless
+        </p>
+        <p class="text-lg text-gray-500 tracking-wider text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+          consequatur officiis voluptatem voluptatibus voluptas excepturi
+          suscipit, nisi laboriosam error numquam unde quis quisquam soluta odio
+          cumque ab, ratione perferendis? Esse atque, cupiditate voluptate
+          pariatur excepturi dignissimos laborum hic alias corporis sunt porro
+          autem possimus nostrum cum, doloremque cumque et dolores veniam,
+          inventore necessitatibus accusamu.
+        </p>
+      </div>
+    </section>
+
+    <footer
+      class="w-full flex items-center justify-center h-32 bg-gray-700 gap-6"
+    >
+      <i
+        class="bx bxl-facebook text-3xl text-gray-50 hover:scale-110 transition-all duration-300 ease-in-out"
+      ></i>
+      <i
+        class="bx bxl-instagram text-3xl text-gray-50 hover:scale-110 transition-all duration-300 ease-in-out"
+      ></i>
+      <i
+        class="bx bxl-twitter text-3xl text-gray-50 hover:scale-110 transition-all duration-300 ease-in-outr"
+      ></i>
+      <i
+        class="bx bxl-discord text-3xl text-gray-50 hover:scale-110 transition-all duration-300 ease-in-out"
+      ></i>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
